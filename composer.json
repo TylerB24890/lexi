@@ -1,0 +1,24 @@
+{
+    "name": "elexicon/lexi",
+    "description": "lexi",
+    "type": "project",
+    "license": "MIT",
+    "keywords": ["wordpress", "framework"],
+    "authors": [
+      {
+        "name": "Tyler Bailey",
+        "email": "tyler@elexicon.com",
+        "homepage": "https://elexicon.com"
+      }
+    ],
+    "require": {
+      "php": ">=7.0"
+    },
+    "autoload": {
+      "psr-4": {
+        "Elexicon\\Lexi\\Core\\": "classes/",
+        "Elexicon\\Lexi\\Factory\\": "classes/factory/",
+        "Elexicon\\Lexi\\Shortcodes\\": "classes/shortcodes/"
+      }
+    }
+}
