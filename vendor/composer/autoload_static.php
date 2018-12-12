@@ -7,7 +7,7 @@ namespace Composer\Autoload;
 class ComposerStaticInitdded5021f7a30924853ca01ca5b47d50
 {
     public static $prefixLengthsPsr4 = array (
-        'E' => 
+        'E' =>
         array (
             'Elexicon\\Lexi\\Shortcodes\\' => 25,
             'Elexicon\\Lexi\\Factory\\' => 22,
@@ -16,15 +16,19 @@ class ComposerStaticInitdded5021f7a30924853ca01ca5b47d50
     );
 
     public static $prefixDirsPsr4 = array (
-        'Elexicon\\Lexi\\Shortcodes\\' => 
+        'Elexicon\\Lexi\\Admin\\' =>
+        array (
+            0 => __DIR__ . '/../..' . '/admin/classes',
+        ),
+        'Elexicon\\Lexi\\Shortcodes\\' =>
         array (
             0 => __DIR__ . '/../..' . '/classes/shortcodes',
         ),
-        'Elexicon\\Lexi\\Factory\\' => 
+        'Elexicon\\Lexi\\Factory\\' =>
         array (
             0 => __DIR__ . '/../..' . '/classes/factory',
         ),
-        'Elexicon\\Lexi\\Core\\' => 
+        'Elexicon\\Lexi\\Core\\' =>
         array (
             0 => __DIR__ . '/../..' . '/classes',
         ),

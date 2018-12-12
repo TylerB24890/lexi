@@ -39,6 +39,10 @@ class Init {
 		require_once(LEXI_DIR . 'theme-functions.php');
 
 		new \Elexicon\Lexi\Shortcodes\Register();
+
+		if( is_admin() ) {
+			new \Elexicon\Lexi\Admin\Init();
+		}
 	}
 
 	/**

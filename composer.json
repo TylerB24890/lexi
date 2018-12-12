@@ -18,7 +18,8 @@
       "psr-4": {
         "Elexicon\\Lexi\\Core\\": "classes/",
         "Elexicon\\Lexi\\Factory\\": "classes/factory/",
-        "Elexicon\\Lexi\\Shortcodes\\": "classes/shortcodes/"
+        "Elexicon\\Lexi\\Shortcodes\\": "classes/shortcodes/",
+        "Elexicon\\Lexi\\Admin\\": "admin/classes/"
       }
     }
 }
