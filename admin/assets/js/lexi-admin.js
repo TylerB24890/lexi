@@ -1,5 +1,11 @@
 jQuery(document).ready(function($) {
-  
-  // Open Documentation link in new tab
-  $('ul#adminmenu li#toplevel_page_lexi a[href$="http://theme-generator.elexicon.com/docs"]').attr('target', '_blank');
+
+  // Open external menu links in new tab
+  $('ul#adminmenu li#toplevel_page_lexi a').each(function() {
+    var linkTarget = $(this).attr('href');
+
+    if(linkTarget.indexOf('.elexicon.com') > -1) {
+      $(this).attr('target', '_blank');
+    }
+  });
 });

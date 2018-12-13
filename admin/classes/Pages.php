@@ -46,7 +46,8 @@ class Pages {
       array($this, 'render_lexi_options')
     );
 
-    // Add external documentation link
+    // Add external links
+    $submenu['lexi'][] = array('Theme Generator', 'manage_options', 'http://theme-generator.elexicon.com');
     $submenu['lexi'][] = array('Documentation', 'manage_options', 'http://theme-generator.elexicon.com/docs');
   }
 
