@@ -28,5 +28,6 @@ class Assets {
     }
 
     wp_enqueue_style( 'lexi-admin', LEXI_URL . 'admin/assets/styles/lexi-admin.css' );
+    wp_enqueue_script( 'lexi-admin-js', LEXI_URL . 'admin/assets/js/lexi-admin.js', array('jquery') );
   }
 }

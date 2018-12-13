@@ -13,6 +13,7 @@ if(in_array($_SERVER['REMOTE_ADDR'], $whitelist)){
   define('LEXI_DEV', true);
 }
 
+define('LEXI_VERSION', '1.6.0');
 define('LEXI_DIR', __DIR__ . '/');
 define('LEXI_URL', get_template_directory_uri() . str_replace( realpath( get_template_directory() ), "", LEXI_DIR ));
 

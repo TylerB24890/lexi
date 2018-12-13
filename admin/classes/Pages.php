@@ -16,6 +16,9 @@ class Pages {
   }
 
   public function add_admin_pages() {
+    global $submenu;
+
+    // Top Level
     add_menu_page(
       __( 'Lexi', 'lexi' ),
       __( 'Lexi', 'lexi' ),
@@ -23,9 +26,35 @@ class Pages {
       'lexi',
       array( $this, 'render_lexi_dashboard' )
     );
+
+    // Custom Top Level Link
+    add_submenu_page(
+      'lexi',
+      __('Overview', 'lexi'),
+      __('Overview', 'lexi'),
+      'manage_options',
+      'lexi'
+    );
+
+    // Options page
+    add_submenu_page(
+      'lexi',
+      __('Options', 'lexi'),
+      __('Options', 'lexi'),
+      'manage_options',
+      'lexi-options',
+      array($this, 'render_lexi_options')
+    );
+
+    // Add external documentation link
+    $submenu['lexi'][] = array('Documentation', 'manage_options', 'http://theme-generator.elexicon.com/docs');
   }
 
   public function render_lexi_dashboard() {
     require(LEXI_DIR . 'admin/partials/admin-dashboard.php');
+  }
+
+  public function render_lexi_options() {
+    require(LEXI_DIR . 'admin/partials/admin-options.php');
   }
 }
