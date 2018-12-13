@@ -2,6 +2,20 @@
  * Lexi Admin Styles
  */
 
+/* Container */
+#lexi.wrap {
+  font-size: 16px;
+}
+
+/* Typography */
+#lexi.wrap h1 {
+  font-weight: bold;
+}
+#lexi.wrap h1 > small {
+  font-weight: normal;
+}
+
+/* Content */
 #lexi.wrap .content {
   margin: 30px 0;
 }

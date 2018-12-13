@@ -23,9 +23,6 @@ class Assets {
   }
 
   public function load_assets( $hook ) {
-    if( $hook !== "toplevel_page_lexi" ) {
-      return;
-    }
 
     wp_enqueue_style( 'lexi-admin', LEXI_URL . 'admin/assets/styles/lexi-admin.css' );
     wp_enqueue_script( 'lexi-admin-js', LEXI_URL . 'admin/assets/js/lexi-admin.js', array('jquery') );
