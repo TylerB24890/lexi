@@ -2,6 +2,16 @@
  * Lexi Admin Styles
  */
 
+/* Global */
+span.lexi-separator {
+  display: block;
+  margin: 1px 0 1px -5px;
+  padding: 0;
+  height: 1px;
+  line-height: 1px;
+  background: #666666;
+}
+
 /* Container */
 #lexi.wrap {
   font-size: 16px;

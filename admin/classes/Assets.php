@@ -14,11 +14,6 @@ if ( ! defined( 'ABSPATH' ) ) exit(); // No direct access
 
 class Assets {
   public function __construct() {
-
-    if( ! is_admin() ) {
-      return;
-    }
-
     add_action( 'admin_enqueue_scripts', array( $this, 'load_assets' ) );
   }
 
